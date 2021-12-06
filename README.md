@@ -1,2 +1,2 @@
-# blog
-博客 or 笔记
+# study notes 
+学习笔记
