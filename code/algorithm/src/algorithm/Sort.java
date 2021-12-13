@@ -22,12 +22,8 @@ public class Sort {
         for (int i = 1; i < numArr.length; i++) {
             int nextInsertNum = numArr[i];
             int j = i - 1;
-            for (; j >= 0; j--) {
-                if (numArr[j] > nextInsertNum) {
-                    numArr[j + 1] = numArr[j];
-                } else {
-                    break;
-                }
+            for (; j >= 0 && numArr[j] > nextInsertNum; j--) {
+                numArr[j + 1] = numArr[j];
             }
             numArr[j + 1] = nextInsertNum;
             System.out.println("第" + i + "轮排序后的数组：" + Arrays.toString(numArr));
