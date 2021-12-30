@@ -1,6 +1,6 @@
 # Spring容器启动源码
 
-首先声明：看本篇文章之前需要先看[这篇文章]([study-notes/Sping核心组件介绍.md at master · ZhaoCharles/study-notes (github.com)](https://github.com/ZhaoCharles/study-notes/blob/master/docs/Spring/Sping核心组件介绍.md))，以防止由于对一些组件不熟悉导致的阅读困难。
+首先声明：看本篇文章之前需要先看[这篇文章](https://github.com/ZhaoCharles/study-notes/blob/master/docs/Spring/Sping核心组件介绍.md)，以防止由于对一些组件不熟悉导致的阅读困难。
 
 Spring中包含多个容器的实现，本篇我们以Spring boot使用的AnnotationConfigApplicationContext容器为例来介绍容器的启动到底做了些什么。需要提前说明的是，由于容器启动时的有些操作较复杂，因此将这些内容放在后面的文章中单独介绍。另外，本文中粘贴的Spring源码删除了一些不重要的部分，因此与源码会有些差异。
 
