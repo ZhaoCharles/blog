@@ -6,7 +6,7 @@ Spring中包含多个容器的实现，本篇我们以Spring boot使用的Annota
 
 在介绍容器启动之前我们先来了解下AnnotationConfigApplicationContext类的类继承结构：
 
-![AnnotationConfigApplicationContext类的类继承结构](D:\plan\AnnotationConfigApplicationContext.png)
+![AnnotationConfigApplicationContext类的类继承结构](https://github.com/ZhaoCharles/study-notes/blob/master/images/AnnotationConfigApplicationContext.png)
 
 ### 一、Spring容器的使用
 
@@ -753,6 +753,6 @@ public static void registerBeanPostProcessors(
 
 ### 三、AnnotationConfigApplicationContext启动流程图
 
-![AnnotationConfigApplicationContext启动流程图](D:\JAVA\设计模式\Spring容器启动过程.png)
+![AnnotationConfigApplicationContext启动流程图](https://github.com/ZhaoCharles/study-notes/blob/master/images/Spring%E5%AE%B9%E5%99%A8%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B.png)
 
 
