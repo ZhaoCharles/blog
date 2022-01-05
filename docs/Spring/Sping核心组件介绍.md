@@ -78,3 +78,6 @@ FactoryBean与BeanFactory名称相似，但其功能却是天差地别。BeanFac
 
 Spring中还有一些以Metadata结尾的类或者接口，这些类或接口表示的是元数据。例如ClassMetadata表示的是类的元数据，AnnotationMetadata表示的是注解元数据。Spring在启动时并不会一股脑儿直接将扫描到的全部类都加载到JVM中，但有时候又需要类的某些信息，这时候就可以使用ASM技术（java字节码操作和分析框架）不需要加载Class文件的将需要的类的信息读取到元数据中，CGLIB动态代理使用的也是ASM技术。
 
+## **Aware
+
+以Aware接口的一些接口提供了一些回调函数，例如BeanNameAware接口提供了获取当前类的beanName的回调函数、ApplicationContextAware接口提供了获取当前容器对象的接口等等，这些回调函数在Bean初始化前被调用。
