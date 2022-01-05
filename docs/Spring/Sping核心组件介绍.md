@@ -16,7 +16,7 @@ BeanFactory和ApplicatinContext都是接口，它们都有很多实现类来应�
 
 DefaultListableFactory的类继承结构如下：
 
-![DeafultListableFactory类图](D:\plan\DefaultListableBeanFactory.png "DeafultListableFactory类图")
+![DeafultListableFactory类图](https://github.com/ZhaoCharles/study-notes/blob/master/images/DefaultListableBeanFactory.png "DeafultListableFactory类图")
 
 可以看到DefaultListableFactory直接或间接地实现了很多接口，这些接口都有它们各自的功能，因此DefaultListableFactory类拥有很多功能。例如AliasRegistry接口提供了别名功能，FactoryBeanRegistrySupport提供了FactoryBean的功能，BeanDefinitionRegistry接口的注册BeanDefinition等操作等等一系列功能。关于DefaultListableFactory的功能后续介绍源码时再详细介绍。
 
@@ -24,7 +24,7 @@ ApplicationContext接口的实现类分别适用于不同的场景，其中较�
 
 AnnotationConfigApplicationContext的类继承结构如下：
 
-![AnnotationConfigApplicationContext类继承结构](D:\plan\FunctionalInterface.png "AnnotationConfigApplicationContext类继承结构")
+![AnnotationConfigApplicationContext类继承结构](https://github.com/ZhaoCharles/study-notes/blob/master/images/AnnotationConfigApplicationContext.png "AnnotationConfigApplicationContext类继承结构")
 
 可以看到AnnotationConfigApplicationContext类实现了BeanFactory之外还实现了其他的几个接口，其中MessageSource接口提供了国际化功能，ApplicationEventPublisher接口提供了广播事件的功能，ResourcePatternResolver接口提供了加载资源的功能等等。关于这些功能同样在后面会详细介绍，此处不再赘述。
 
